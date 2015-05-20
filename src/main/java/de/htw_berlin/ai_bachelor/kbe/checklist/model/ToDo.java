@@ -26,9 +26,7 @@ public class ToDo implements Serializable {
 		this.done = done;
 	}
 	public String getName() {
-		System.out.println("Name!");
 		return name;
-		
 	}
 	public void setName(String name) {
 		this.name = name;

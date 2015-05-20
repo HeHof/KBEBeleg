@@ -31,4 +31,18 @@ public class ToDoList implements Serializable {
 		toDos.add(new ToDo("Geburtstagsgeschenk besorgen"));
 		toDos.add(new ToDo("Putzen"));
 	}
+	
+	public int getNumberOfTodos(){
+		return toDos.size();
+	}
+	
+	public int getNumberOfDoneTodos(){
+		int count = 0;
+		for (ToDo t : toDos) {
+			if (t.isDone() == true){
+				count++;
+			}
+		}
+		return count;
+	}
 }
